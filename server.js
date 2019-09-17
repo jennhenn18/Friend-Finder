@@ -12,11 +12,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // create middleware functions
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
+app.use(express.static('./public'));
+
+// import the apiRoutes and htmlRoutes js files
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 // create a listener
 app.listen(PORT, () => console.log(`Sever started on port ${PORT}`));
-
-// export data
-module.export = app;

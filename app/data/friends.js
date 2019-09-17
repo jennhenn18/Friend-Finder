@@ -34,4 +34,4 @@ var friends = [
 
 
 // export data
-module.export = friends;
+module.exports = friends;

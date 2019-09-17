@@ -1,17 +1,19 @@
-// import npm packages and other js files
-const express = require('express');
-const path = require('path');
-const friends = require('../../app/data/friends');
-const server = require('../../server');
+// import friends data
+let friends = require('../data/friends');
 
-// create route to post new friend data
-server.app.post('/api/survey', (req, res) => {
-    // create variable to store data from AJAX call
-    var newFriend = req.body;
+// export data
+module.exports = (app) => {
+    // create route to post new friend data
+    app.post('/api/survey', (req, res) => {
+        // create variable to store data from AJAX call
+        var newFriend = req.body;
+        console.log(friends);
 
-    // push new friend data into the friends array
-    friends.push(newFriend);
+        // push new friend data into the friends array
+        friends.push(newFriend);
 
-    // return the json file of the new friend
-    res.json(newFriend);
-});
+        // return the json file of the new friend
+        res.json(newFriend);
+    });
+}
+
