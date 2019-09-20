@@ -21,4 +21,4 @@ require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
 // create a listener
-app.listen(PORT, () => console.log(`Sever started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

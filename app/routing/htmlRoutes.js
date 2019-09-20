@@ -7,12 +7,12 @@ module.exports = (app) => {
 
     // create route for homepage
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'home.html'));
+        res.sendFile(path.join(__dirname, '../public/home.html'));
     });
 
     // create route for survey
     app.get('/survey', (req, res) => {
-        res.sendFile(path.join(__dirname, 'survey.html'));
+        res.sendFile(path.join(__dirname, '../public/survey.html'));
     });
 
     // create route to send back all friend data
