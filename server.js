@@ -1,9 +1,7 @@
 // import npm packages and other js files
 const express = require('express');
 const path = require('path');
-const friends = require('./app/data/friends.js');
-const apiRoutes = require('./app/routing/apiRoutes');
-const htmlRoutes = require('./app/routing/htmlRoutes');
+
 
 // create an instance of express
 const app = express();

@@ -4,32 +4,98 @@ var friends = [
     {
         name: 'Rachel Green',
         image: '',
-        score: 6
+        scores: [
+            2,
+            4,
+            5,
+            1,
+            4,
+            2,
+            3,
+            2,
+            2,
+            1
+        ]
     },
     {
         name: 'Monica Geller',
         image: '',
-        score: 8
+        scores: [
+            2,
+            4,
+            5,
+            1,
+            4,
+            2,
+            3,
+            2,
+            2,
+            1
+        ]
     },
     {
         name: 'Chandler Bing',
         image: '',
-        score: 3
+        scores: [
+            2,
+            4,
+            5,
+            1,
+            4,
+            2,
+            3,
+            2,
+            2,
+            1
+        ]
     },
     {   
         name:'Pheobe Buffay',
         image: '',
-        score: 7
+        scores: [
+            2,
+            4,
+            5,
+            1,
+            4,
+            2,
+            3,
+            2,
+            2,
+            1
+        ]
     },
     {
         name: 'Joey Tribbiani',
         image: '',
-        score: 10
+        scores: [
+            2,
+            4,
+            5,
+            1,
+            4,
+            2,
+            3,
+            2,
+            2,
+            1
+        ]
     },
     {
         name: 'Ross Geller',
         image: '',
-        score: 2
+        scores: [
+            2,
+            4,
+            5,
+            1,
+            4,
+            2,
+            3,
+            2,
+            2,
+            1
+        ]
     }]
 
 
