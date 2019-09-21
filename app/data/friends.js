@@ -3,7 +3,7 @@
 var friends = [
     {
         name: 'Rachel Green',
-        image: '',
+        image: '../public/assets/rachel.jpg',
         scores: [
             2,
             4,
@@ -19,7 +19,7 @@ var friends = [
     },
     {
         name: 'Monica Geller',
-        image: '',
+        image: '../public/assets/monica.jpg',
         scores: [
             2,
             4,
@@ -35,7 +35,7 @@ var friends = [
     },
     {
         name: 'Chandler Bing',
-        image: '',
+        image: '../public/assets/chandler.jpg',
         scores: [
             2,
             4,
@@ -51,7 +51,7 @@ var friends = [
     },
     {   
         name:'Pheobe Buffay',
-        image: '',
+        image: '../public/assets/phoebe.jpg',
         scores: [
             2,
             4,
@@ -67,7 +67,7 @@ var friends = [
     },
     {
         name: 'Joey Tribbiani',
-        image: '',
+        image: '../public/assets/joey.jpg',
         scores: [
             2,
             4,
@@ -83,7 +83,7 @@ var friends = [
     },
     {
         name: 'Ross Geller',
-        image: '',
+        image: '../public/assets/ross.jpg',
         scores: [
             2,
             4,
