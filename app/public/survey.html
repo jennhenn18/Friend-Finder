@@ -143,7 +143,53 @@
     <!-- import Javascript files -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src='./assets/survey.js'></script>
+    <script type='text/javascript'>
+
+        // on click of submit button store all selected values
+        $('.submit').on('click', () => {
+        
+                var answer1 = $('#question-1 [name=question1]:checked').val();
+                var answer2 = $('#question-2 [name=question2]:checked').val();
+                var answer3 = $('#question-3 [name=question3]:checked').val();
+                var answer4 = $('#question-4 [name=question4]:checked').val();
+                var answer5 = $('#question-5 [name=question5]:checked').val();
+                var answer6 = $('#question-6 [name=question6]:checked').val();
+                var answer7 = $('#question-7 [name=question7]:checked').val();
+                var answer8 = $('#question-8 [name=question8]:checked').val();
+                var answer9 = $('#question-9 [name=question9]:checked').val();
+                var answer10 = $('#question-10 [name=question10]:checked').val();
+
+                // store user answer as a string
+                var userAnswerStr = answer1 + ',' + answer2  + ',' + answer3 + ',' + answer4 + ',' + answer5 + ',' + answer6 + ',' + answer7 + ',' + answer8 + ',' + answer9 + ',' + answer10;
+
+                
+                // change the string values into an array of numbers
+                var userAnswerArray = userAnswerStr.split(',').map(Number)
+                
+                var userAnswer = {
+                        userinput: userAnswerArray
+                };
+
+                // create POST AJAX call
+                $.post('/api/survey', userAnswer, (data) => {
+                        // if the call passes trigger the modal
+                        if (data) {
+                                console.log(data)
+                                // update the modal with the best match information
+                                $('matchName').html(friends[i].name)
+                                $('matchImage').attr('src', friends[i].image)
+                                // trigger the modal
+                                $('.modal').show();
+                        } else {
+                                // throw an error message
+                                alert('Oh no! Something went wrong. Please try again.')
+                        }
+                // clear the form
+                $('.question').val('');
+
+                });
+        }); 
+    </script>
 
 </body>
 </html>

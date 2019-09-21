@@ -5,15 +5,27 @@ let friends = require('../data/friends');
 module.exports = (app) => {
     // create route to post new friend data
     app.post('/api/survey', (req, res) => {
-        // create variable to store data from AJAX call
-        var newFriend = req.body;
-        console.log(friends);
+        console.log(typeof req.body.userinput)
+        // var currentTotalDifferenceMatch = 0;
+        // var bestMatch;
 
-        // push new friend data into the friends array
-        friends.push(newFriend);
+        // // iterate over friends
+        // for (let i = 0; i < friends.length; i++) {
+        //     const currentFriend = friends[i];
+        //     var totalDifference = 0;
 
-        // return the json file of the new friend
-        res.json(newFriend);
+        //     // nested loop - iterate over existing friends score
+        //     for (let j = 0; j < currentFriend.scores.length; j++) {
+        //         // calcuate the total difference
+        //         totalDifference += Math.abs(currentFriend.scores[j] - req.body.userinput[j]);
+        //     }
+        //     // check this calcuated total diffrence against the temp total difference for best match
+        //     if (totalDifference < currentTotalDifferenceMatch) {
+        //         currentTotalDifferenceMatch = totalDifference
+        //         bestMatch = currentFriend;
+        //     }
+        // }
+        // // return bestMatch
+        // console.log(bestMatch)
     });
 }
-
