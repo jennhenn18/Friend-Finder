@@ -3,7 +3,7 @@
 var friends = [
     {
         name: 'Rachel Green',
-        image: '../public/assets/rachel.jpg',
+        image: 'https://media.giphy.com/media/jOajZpCQZsBpZ47tNm/giphy.gif',
         scores: [
             2,
             1,
@@ -19,7 +19,7 @@ var friends = [
     },
     {
         name: 'Monica Geller',
-        image: '../public/assets/monica.jpg',
+        image: 'https://media.giphy.com/media/hpnRtHDXmzhLO/giphy.gif',
         scores: [
             2,
             1,
@@ -35,7 +35,7 @@ var friends = [
     },
     {
         name: 'Chandler Bing',
-        image: '../public/assets/chandler.jpg',
+        image: 'https://media.giphy.com/media/fA81FF4mdE6lgeoJwb/giphy.gif',
         scores: [
             1,
             2,
@@ -51,7 +51,7 @@ var friends = [
     },
     {   
         name:'Pheobe Buffay',
-        image: '../public/assets/phoebe.jpg',
+        image: 'https://media.giphy.com/media/fA81FF4mdE6lgeoJwb/giphy.gif',
         scores: [
             1,
             1,
@@ -67,7 +67,7 @@ var friends = [
     },
     {
         name: 'Joey Tribbiani',
-        image: '../public/assets/joey.jpg',
+        image: 'https://media.giphy.com/media/11SIBu3s72Co8w/giphy.gif',
         scores: [
             2,
             2,
@@ -83,7 +83,7 @@ var friends = [
     },
     {
         name: 'Ross Geller',
-        image: '../public/assets/ross.jpg',
+        image: 'https://media.giphy.com/media/S6qkS0ETvel6EZat45/giphy.gif',
         scores: [
             2,
             2,

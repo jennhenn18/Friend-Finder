@@ -146,7 +146,8 @@
     <script type='text/javascript'>
 
         // on click of submit button store all selected values
-        $('.submit').on('click', () => {
+        $('.submit').on('click', (e) => {
+                e.preventDefault();
         
                 var answer1 = $('#question-1 [name=question1]:checked').val();
                 var answer2 = $('#question-2 [name=question2]:checked').val();
@@ -174,10 +175,9 @@
                 $.post('/api/survey', userAnswer, (data) => {
                         // if the call passes trigger the modal
                         if (data) {
-                                console.log(data)
                                 // update the modal with the best match information
-                                $('matchName').html(friends[i].name)
-                                $('matchImage').attr('src', friends[i].image)
+                                $('#matchName').html(data.name)
+                                $('#matchImage').attr('src', data.image)
                                 // trigger the modal
                                 $('.modal').show();
                         } else {
