@@ -6,14 +6,14 @@ var friends = [
         image: '../public/assets/rachel.jpg',
         scores: [
             2,
-            4,
-            5,
             1,
-            4,
-            2,
-            3,
+            1,
             2,
             2,
+            1,
+            1,
+            2,
+            1,
             1
         ]
     },
@@ -22,14 +22,14 @@ var friends = [
         image: '../public/assets/monica.jpg',
         scores: [
             2,
-            4,
-            5,
             1,
-            4,
+            1,
             2,
-            3,
+            1,
+            1,
+            1,
             2,
-            2,
+            1,
             1
         ]
     },
@@ -37,32 +37,32 @@ var friends = [
         name: 'Chandler Bing',
         image: '../public/assets/chandler.jpg',
         scores: [
-            2,
-            4,
-            5,
             1,
-            4,
-            2,
-            3,
             2,
             2,
-            1
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
         ]
     },
     {   
         name:'Pheobe Buffay',
         image: '../public/assets/phoebe.jpg',
         scores: [
-            2,
-            4,
-            5,
             1,
-            4,
-            2,
-            3,
+            1,
             2,
             2,
-            1
+            1,
+            1,
+            2,
+            1,
+            2,
+            2
         ]
     },
     {
@@ -70,15 +70,15 @@ var friends = [
         image: '../public/assets/joey.jpg',
         scores: [
             2,
-            4,
-            5,
+            2,
+            2,
             1,
-            4,
-            2,
-            3,
+            1,
             2,
             2,
-            1
+            2,
+            1,
+            2
         ]
     },
     {
@@ -86,13 +86,13 @@ var friends = [
         image: '../public/assets/ross.jpg',
         scores: [
             2,
-            4,
-            5,
+            2,
             1,
-            4,
+            1,
             2,
-            3,
             2,
+            1,
+            1,
             2,
             1
         ]
