@@ -19,9 +19,16 @@
     
     <!-- Header -->
 
-        <h1 id="surveyTitle">Let's begin!</h1>
+        <!-- About You  -->
+        <h1 id="surveyTitle">Before you begin, tell us a bit about yourself</h1>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required="">
+    
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required="">
 
     <!-- Begin Questions -->
+    <h1 id="surveyTitle">Let's get started</h1>
 
             <!-- Question 1 -->
             <h3 class="text">Would you rather...</h3>
@@ -189,6 +196,11 @@
 
                 });
         }); 
+
+
+        $('.close').on('click', function(){
+                $('.modal').hide();
+        });
     </script>
 
 </body>
